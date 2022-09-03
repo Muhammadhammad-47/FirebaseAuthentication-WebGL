@@ -24,7 +24,7 @@
       </div>
     </div>
 
-           <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
 
   <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
@@ -36,27 +36,29 @@
   <script>
     // Your web app's Firebase configuration
     var firebaseConfig = {
-  apiKey: "AIzaSyAOQvi1d0jKjwU4Mgq44fmlbJnPxBjSZYw",
-  authDomain: "fir-authenticationwebgl.firebaseapp.com",
-  projectId: "fir-authenticationwebgl",
-  storageBucket: "fir-authenticationwebgl.appspot.com",
-  messagingSenderId: "501758751460",
-  appId: "1:501758751460:web:0b9133a7d9896ead21b2f1"
-};
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+          apiKey: "AIzaSyAOQvi1d0jKjwU4Mgq44fmlbJnPxBjSZYw",
+          authDomain: "fir-authenticationwebgl.firebaseapp.com",
+          projectId: "fir-authenticationwebgl",
+          storageBucket: "fir-authenticationwebgl.appspot.com",
+          messagingSenderId: "501758751460",
+          appId: "1:501758751460:web:0b9133a7d9896ead21b2f1"
+        };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
   </script>
 
     <script>
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/FirebaseAuthenticationWebGL.loader.js";
+      var loaderUrl = buildUrl + "/AuthenticationProj.loader.js";
       var config = {
-        dataUrl: buildUrl + "/FirebaseAuthenticationWebGL.data.unityweb",
-        frameworkUrl: buildUrl + "/FirebaseAuthenticationWebGL.framework.js.unityweb",
-        codeUrl: buildUrl + "/FirebaseAuthenticationWebGL.wasm.unityweb",
+        dataUrl: buildUrl + "/AuthenticationProj.data.unityweb",
+        frameworkUrl: buildUrl + "/AuthenticationProj.framework.js.unityweb",
+        codeUrl: buildUrl + "/AuthenticationProj.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "MH47",
         productName: "WebGL Authentication Firebase",
         productVersion: "0.1",
         showBanner: unityShowBanner,
